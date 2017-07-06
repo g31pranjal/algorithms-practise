@@ -29,7 +29,7 @@ int main() {
 
 			// cout << ans << "\n";
 
-			if(ans[ans.length() - 1] >= '2')
+			if(ans[ans.length() - 1	] >= '2')
 				ans[ans.length() - 1] -= 2;
 			else {
 				ans[ans.length() - 1] = (10 + (ans[ans.length() - 1] - 48) - 2) + 48;

@@ -13,7 +13,7 @@ int main() {
 		for(int i=0;i<s.length();i++) {
 			if(s[i] == 'K') {
 				nok++;
-				fn = fn+= ccnt;
+				fn += ccnt;
 			}
 			else if(s[i] == 'E') 
 				ccnt += nok;

@@ -26,7 +26,7 @@ int ds_root(int index) {
 }
 
 void ds_merge(int i1, int i2) {
-	a[ds_root(i1)] = ds_root(i2);
+	a[ds_root(i1)] = i2;
 }
 
 int main() {
@@ -67,7 +67,7 @@ int main() {
 			i2 = loc.first.second;
 
 			if(ds_root(i1) != ds_root(i2)) {
-				sum += loc.second;
+					sum += loc.second;
 				ds_merge(i1, i2);
 			}
 

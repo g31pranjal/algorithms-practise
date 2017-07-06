@@ -15,8 +15,7 @@ int main() {
 	for(int i=0;i<n;i++) {
 		cin >> t;
 		if(a.find(t-1) != a.end()) {
-			if(a[t-1] + 1 > a[t]) 
-				a[t] = a[t-1] + 1;
+			a[t] = a[t-1] + 1;
 		}
 		else {
 			a[t] = 1;
@@ -31,8 +30,5 @@ int main() {
 	}
 
 	printf("%d\n", max);
-
-
-
 
 }

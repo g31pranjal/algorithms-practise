@@ -2,7 +2,6 @@
 #include <iostream>
 #include <string>
 
-
 using namespace std;
 
 vector<unsigned long long> mat (1,0);
@@ -30,7 +29,7 @@ unsigned long long recurring(int num) {
 	else 
 		b3 = recurring(p3);	
 
-	return b1 + b2 + b3;
+	return b1 + b2 + b3 > num ? b1 + b2 + b3 : num;
 }
 
 int main() {

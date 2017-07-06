@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdio>
 #include <algorithm>
+#include <vector>
 
 using namespace std;
 
@@ -25,11 +26,12 @@ int main() {
 
 
 	long long lo = 1;
-	long long hi = 2000000000;
+	long long hi = 1000000000;
 	long long gained, mid;
 
 	while(lo < hi) {
 		mid = lo + (hi-lo + 1)/2 ;
+		
 		gained = 0;
 		for(int i=0;i<n;i++) {
 			if(a[i] - mid > 0)

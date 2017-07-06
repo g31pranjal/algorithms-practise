@@ -22,20 +22,17 @@ int main() {
 	int n, a[100000], pre;
 	scanf("%d", &n);
 
-	scanf("%d", &pre);
+	scanf("%d", &a[0]);
 
 	for(int i=1;i<n;i++) {
 		scanf("%d", &a[i]);
-		a[i-1] = a[i] - pre;
-		pre = a[i];
+		a[i-1] = a[i]-a[i-1];
 	}
 
 	pre = a[0];
 
 	for(int i=1;i<n-1;i++) {
-		printf("pre pre %d\n", pre);
 		pre = gcd(pre, a[i]);
-		printf("pst pre %d\n", pre);
 	}
 
 	int count = 0;

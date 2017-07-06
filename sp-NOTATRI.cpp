@@ -34,15 +34,15 @@ int main() {
 		int k=0;
 
 		for(int i=n-1;i>=2;i--) {
-			// cout << "i : \t a[" << i << "] : " << a[i] << "\n";
+			cout << "i : \t a[" << i << "] : " << a[i] << "\n";
 			k = 0;
 			for(int j=i-1;j>=1&&j>=k;j--) {
-				// cout << "j : \t a[" << j << "] : " << a[j] << "\n";
+				cout << "j : \t a[" << j << "] : " << a[j] << "\n";
 				while(j>k && a[j]+a[k] < a[i] ){
 					// cout << "k : \t a[" << k << "] : " << a[k] << "\t increasing k\n";
 					k++;
 				}
-				// cout << " value of k : " << k << "\n";
+				cout << " value of k : " << k << "\n";
 				count += (k);
 			}
 			count += (k)*(k-1)/2;
